@@ -1,0 +1,40 @@
+{
+    "root": true, //多个eslint文件时，以这个为标准
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "globals": { //全局变量
+        "window": true,
+        "document": true
+    },
+    "env": {
+        "browser": true, //使用环境: browser/node
+        "es2021": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": { //解析器选项
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-console": 0, //是否允许console.log
+        "indent": [ //缩进
+            2,
+            4
+        ],
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/no-unused-vars":1,
+        "@typescript-eslint/no-inferrable-types": "off", // 关闭类型推断
+        "@typescript-eslint/no-explicit-any":0// 允许使用any
+    }
+}

@@ -1,3 +1,4 @@
+/* eslint-disable */
 // webpack development 配置
 const {
     merge

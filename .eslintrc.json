@@ -3,7 +3,8 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
     ],
     "globals": { //全局变量
         "window": true,
@@ -28,13 +29,10 @@
     ],
     "rules": {
         "no-console": 0, //是否允许console.log
-        "indent": [ //缩进
-            2,
-            4
-        ],
         "@typescript-eslint/no-var-requires": 0,
         "@typescript-eslint/no-unused-vars":1,
         "@typescript-eslint/no-inferrable-types": "off", // 关闭类型推断
-        "@typescript-eslint/no-explicit-any":0// 允许使用any
+        "@typescript-eslint/no-explicit-any":0,// 允许使用any
+        "endOfLine": "auto"
     }
 }

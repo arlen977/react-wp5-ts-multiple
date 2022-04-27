@@ -1,3 +1,4 @@
+/* eslint-disable */
 // webpack production 配置
 const {
     merge

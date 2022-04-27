@@ -33,6 +33,6 @@
         "@typescript-eslint/no-unused-vars":1,
         "@typescript-eslint/no-inferrable-types": "off", // 关闭类型推断
         "@typescript-eslint/no-explicit-any":0,// 允许使用any
-        "endOfLine": "auto"
+        "endOfLine": 0
     }
 }
